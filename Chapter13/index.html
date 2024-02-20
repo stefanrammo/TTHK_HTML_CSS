@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliptical Shapes</title>
+    <style>
+        p {
+            border: 5px solid #ee3e80;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        p.one {
+            border-top-left-radius: 80px 50px;
+            -moz-border-radius-top-left: 80px 50px;
+            box-shadow: -5px -5px #777777;
+        }
+
+        p.two {
+            border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+            border-color: #bbbbaa #111111 #ee3e80;
+            box-shadow: 5px 5px 15px #777777;
+        }
+
+        p.three {
+            padding: 0px;
+            border-radius: 100px;
+            background: linear-gradient(90deg, #e66465, #9198e5);
+            box-shadow: 0 0 10px #777777;
+        }
+
+        p.four {
+            border-image: url("images/dots.gif") 11 11 11 11 stretch;
+        }
+
+        p.five {
+            border-image: url("images/dots.gif") 11 11 11 11 round;
+        }
+        div {
+            width: 400px;
+        }
+        div.six {
+            overflow: hidden;
+            min-height: 30px;
+            max-height: 50px;
+        }
+
+        div.seven {
+            overflow: scroll;
+            min-height: 30px;
+            max-height: 100px;          
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <p class="four">Asd</p>
+    <p class="five">Asd</p>
+    <div class="six">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sequi impedit facere earum
+        voluptate beatae magni velit nobis excepturi dolor culpa. Accusamus earum aperiam delectus laboriosam tempore ut
+        odit deleniti!</div>
+        <hr>
+    <div class="seven">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt quas eligendi eaque,
+        repudiandae necessitatibus ipsa vitae? Error totam quaerat voluptas odit! Debitis fugiat maxime nisi incidunt,
+        quis voluptates doloribus?</div>
+</body>
+
+</html>
